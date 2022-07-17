@@ -66,6 +66,7 @@ jobs:
              echo $download
              curl -O https://raw.githubusercontent.com/entria/slack-cli/master/src/slack
              chmod +x ./slack
+             ./slack auth login --auth xoxb-3801425561590-3808032493410-fSDgTeZowKb8x5a31uF6u2Nu
              ./slack file upload  --file /tmp/artifact-1  --filetype html --title "production - ${CIRCLE_TAG}" --comment "New production apk available! - ${CIRCLE_TAG}" --channels '#alert'
              #curl -F "content=$download" -H "Authorization: Bearer xoxb-3801425561590-3808032493410-tyTsuGGTiXQIPYdqxPz95kOX" https://slack.com/api/files.upload
 
