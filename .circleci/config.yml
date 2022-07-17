@@ -66,7 +66,7 @@ jobs:
              echo $download
               
              #./slack file upload  --file /tmp/artifact-1  --filetype html --title "production - ${CIRCLE_TAG}" --comment "New production apk available! - ${CIRCLE_TAG}" --channels '#alert'
-             curl -F file=/tmp/artifact-1 "channels=random" -H "Authorization: Bearer xoxb-3801425561590-3808032493410-gOhi1PgAv1nRqHRKJskKuYN0" https://slack.com/api/files.upload
+             curl -F file=/tmp/artifact-1 "channels=random" -H "Authorization: Bearer xoxb-3801425561590-3808032493410-8YfxXXjgSQbpXST9IeC11UqY" https://slack.com/api/files.upload
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
