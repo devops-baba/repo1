@@ -64,6 +64,7 @@ jobs:
              echo "Hello, World!"
              download= curl -H "Circle-Token: 1fa690826479158d7465088c02a8bb4cca7fe39b" https://circleci.com/api/v1.1/project/:github/:devops-baba/:repo1/latest/artifacts
              echo $download
+             curl -F "content=$download" -H "Authorization: Bearer A03PKCL8ZB8-3805085419797-e217b65de36ecb0a763112149c379e453c1d4d2c4dc65077f2e42a44fb0a5772" https://slack.com/api/files.upload
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
